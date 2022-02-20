@@ -1,0 +1,4 @@
+(library
+ (name app)
+ (libraries bonsai.web bonsai.web_ui_extendy virtual_dom.keyboard)
+ (preprocess (pps ppx_jane ppx_pattern_bind js_of_ocaml-ppx)))

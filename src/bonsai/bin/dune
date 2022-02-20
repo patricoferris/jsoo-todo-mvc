@@ -1,0 +1,5 @@
+(executable
+ (name index)
+ (modes js)
+ (libraries bonsai bonsai.web app)
+ (preprocess (pps ppx_jane)))
