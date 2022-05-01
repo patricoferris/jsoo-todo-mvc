@@ -131,7 +131,7 @@ body {
 }
 
 .toggle-all + label:before {
-	content: 'â¯';
+	content: '❯';
 	font-size: 22px;
 	color: #e6e6e6;
 	padding: 10px 27px 10px 27px;
@@ -238,7 +238,7 @@ body {
 }
 
 .todo-list li .destroy:after {
-	content: 'Ã—';
+	content: 'X';
 }
 
 .todo-list li:hover .destroy {

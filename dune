@@ -1,15 +1,21 @@
-(subdir docs
-  (subdir bonsai/
-    (rule
-     (deps %{workspace_root}/src/bonsai/bin/index.bc.js)
-     (mode promote)
-     (targets index.js)
-     (action (copy %{deps} %{targets})))))
+(subdir
+ docs
+ (subdir
+  bonsai/
+  (rule
+   (deps %{workspace_root}/src/bonsai/bin/index.bc.js)
+   (mode promote)
+   (targets index.js)
+   (action
+    (copy %{deps} %{targets})))))
 
-(subdir docs
-  (subdir brr-lwd/
-    (rule
-     (deps %{workspace_root}/src/brr-lwd/bin/index.bc.js)
-     (mode promote)
-     (targets index.js)
-     (action (copy %{deps} %{targets})))))
+(subdir
+ docs
+ (subdir
+  brr-lwd/
+  (rule
+   (deps %{workspace_root}/src/brr-lwd/bin/index.bc.js)
+   (mode promote)
+   (targets index.js)
+   (action
+    (copy %{deps} %{targets})))))

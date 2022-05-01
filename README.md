@@ -3,7 +3,7 @@ jsoo-todo-mvc
 
 ## Overview
 
-This repository contains a few experiments in building [todo-mvc][] apps written in OCaml using [js_of_ocaml][]. As with all experiments there needs to be a "why"? There are quite a few projects I hope to build in the near future with a lot of data and UI components and of course, I want to build them in OCaml. Before choosing a library for doing that I wanted to experiment with them in a simple application. I'm not particularly interested in performance or size of output at this stage but more in the pleasure of working with them. So that leave the final caveat -- if I have used the libraries in a non-idiomatic fashion... let me know.
+This repository contains a few experiments in building [todo-mvc][] apps written in OCaml using [js_of_ocaml][]. As with all experiments there needs to be a "why"? There are quite a few projects I hope to build in the near future with a lot of data and UI components and of course, I want to build them in OCaml. Before choosing a library for doing that I wanted to experiment with them in a simple application. I'm not particularly interested in performance or size of output at this stage but more in the pleasure of working with them. If I have used the libraries in a non-idiomatic fashion... let me know/please open an issue or PR.
 
 The different libraries used are: [bonsai][], [brr-lwd][] and [jsoo-react][]. Note, there is already a [plain jsoo]() implementation and a [brr + note]() implementation. I have [dabbled with functional reactive programming]() and, for now, it just isn't for me.
 
@@ -13,7 +13,11 @@ The different libraries used are: [bonsai][], [brr-lwd][] and [jsoo-react][]. No
 
 ### Bonsai
 
+Bonsai is a library by [Janestreet](https://www.janestreet.com/) for building dynamic web applications. It is used internally by Janestreet and also in their open-source [memtrace_viewer](https://github.com/janestreet/memtrace_viewer).  
+
 ### Brr-lwd
+
+Brr-lwd is the newest of the libraries being experimented with. It is also the only library that has no Javascript dependencies whatsoever. It uses the "light weight document" ([lwd][]) library for building incremental computations.
 
 ### Jsoo-react
 
@@ -24,3 +28,4 @@ A combination of the underlying incremental computation library [OCurrent]() and
 
 [bonsai]: https://github.com/janestreet/bonsai
 [todo-mvc]:
+[lwd]: https://github.com/let-def/lwd
